@@ -1,135 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammad Rida Daas | Ambitious Teen | Future Harvard Student</title>
-  <meta name="description" content="Meet Mohammad Rida Daas – 14-year-old with big dreams, coding projects, fitness goals, and a live GitHub website.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohammad Rida Daas | Ambitious Teen • Future Harvard Student</title>
+  <meta name="description" content="Mohammad Rida Daas — ambitious teen building projects in coding, fitness, and entrepreneurship. Live GitHub site, verified on Google." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ridadaas77-pixel.github.io/MohammadRidaDaas/" />
 
+  <!-- Open Graph (social preview) -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Mohammad Rida Daas | Ambitious Teen • Future Harvard Student" />
+  <meta property="og:description" content="Ambitious teen building projects in coding, fitness, and entrepreneurship. Verified GitHub Pages site." />
+  <meta property="og:url" content="https://ridadaas77-pixel.github.io/MohammadRidaDaas/" />
+  <meta property="og:site_name" content="Mohammad Rida Daas" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@your_twitter_here" />
+  <meta name="twitter:title" content="Mohammad Rida Daas | Ambitious Teen" />
+  <meta name="twitter:description" content="Ambitious teen building projects in coding, fitness, and entrepreneurship." />
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohammad Rida Daas",
+    "alternateName": "Mr CEO",
+    "url": "https://ridadaas77-pixel.github.io/MohammadRidaDaas/",
+    "description": "Ambitious teen building projects in coding, fitness, and entrepreneurship. Future Harvard student.",
+    "jobTitle": "Student",
+    "sameAs": [
+      "https://github.com/ridadaas77-pixel",
+      "https://www.linkedin.com/in/your-profile-if-any",
+      "https://twitter.com/your_twitter_here"
+    ]
+  }
+  </script>
+
+  <!-- Styling: dark professional theme (navy + electric blue) -->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to bottom right, #0f1624, #1a2333);
-      color: #e6e6e6;
+    :root{
+      --bg-1:#0f1624;
+      --bg-2:#121826;
+      --card:#101723;
+      --accent:#2e90ff;
+      --muted:#bfc8d6;
+      --glass: rgba(255,255,255,0.02);
+      --radius:14px;
+      --maxw:900px;
     }
-
-    header {
-      background: #0d1a2d;
-      color: #ffffff;
-      text-align: center;
-      padding: 4rem 1rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-      border-bottom: 2px solid #007bff;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, Roboto, system-ui, -apple-system, "Segoe UI", Arial;
+      background: linear-gradient(180deg,var(--bg-1),var(--bg-2));
+      color:var(--muted);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.6rem;
-      font-weight: 700;
+    header{
+      padding:48px 20px;
+      text-align:center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
     }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      opacity: 0.85;
+    .container{max-width:var(--maxw);margin:28px auto;padding:0 20px}
+    h1{margin:0;color:#fff;font-weight:700;font-size:2.2rem;letter-spacing:-0.5px}
+    .subtitle{color:var(--muted);margin-top:8px;font-weight:500}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      border-left:4px solid rgba(46,144,255,0.12);
+      margin-bottom:20px;
     }
-
-    section {
-      max-width: 760px;
-      margin: 2.5rem auto;
-      padding: 2rem;
-      background: #151d29;
-      border-radius: 15px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-      border-left: 3px solid #007bff;
+    h2{color:var(--accent);margin-top:0;font-size:1.5rem}
+    p, li{color:var(--muted);font-size:1rem}
+    ul{padding-left:0;list-style:none;margin:0}
+    li::before{content:"\2713";color:var(--accent);display:inline-block;width:22px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+    .sidebar{position:sticky;top:20px}
+    .pill{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
+    .cta{
+      display:inline-block;
+      background:linear-gradient(90deg,var(--accent),#2aa0ff);
+      color:#012;
+      padding:10px 14px;border-radius:10px;margin-top:12px;font-weight:700;text-decoration:none;
+      box-shadow: 0 8px 30px rgba(46,144,255,0.08);
     }
-
-    h2 {
-      color: #4da6ff;
-      font-size: 1.9rem;
-      margin-bottom: 1rem;
+    footer{text-align:center;padding:28px 20px;color:rgba(191,200,214,0.7);font-size:0.9rem}
+    .small{font-size:0.92rem;color:rgba(191,200,214,0.9)}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center;justify-content:center}
+    .link{color:var(--accent);text-decoration:none;font-weight:600}
+    .avatar{
+      width:100%;height:180px;border-radius:10px;background:linear-gradient(135deg,#071226,#0a1320);
+      display:flex;align-items:center;justify-content:center;color:#88baff;font-weight:700;font-size:2rem;
+      border:1px solid rgba(255,255,255,0.03)
     }
-
-    p, li {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      opacity: 0.95;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li::before {
-      content: "✔";
-      color: #4da6ff;
-      margin-right: 0.5rem;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #cccccc;
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
-
-    a {
-      color: #4da6ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    .field{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .list-plain{padding-left:0;margin:0}
+    .muted{color:rgba(191,200,214,0.75)}
+    .social{display:flex;gap:10px;flex-wrap:wrap}
+    .social a{display:inline-block;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.02);color:var(--muted);text-decoration:none;border:1px solid rgba(255,255,255,0.02)}
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Mohammad Rida Daas</h1>
-    <p>Ambitious Teen • Future Harvard Student • Coder & Visionary</p>
+    <div class="container">
+      <h1>Mohammad Rida Daas</h1>
+      <div class="subtitle">Ambitious Teen • Future Harvard Student • Building projects in coding & fitness</div>
+      <div class="meta" style="margin-top:18px">
+        <span class="pill">14 years old</span>
+        <span class="pill">NRW, Germany</span>
+        <a class="cta" href="#contact">Contact</a>
+      </div>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hello! I’m Mohammad Rida Daas, a 14-year-old with big dreams and unstoppable ambition. I’m dedicated to coding, fitness, personal growth, business, and building a future that inspires others.</p>
-  </section>
+  <main class="container" id="main">
+    <div class="grid">
+      <div>
+        <section class="card" aria-labelledby="about-title">
+          <h2 id="about-title">About Me</h2>
+          <p class="small">Hello — I’m <strong>Mohammad Rida Daas</strong>. I’m focused on building a future through disciplined training, learning programming, and creating projects that matter. I aim to attend Harvard (CS + Business) and start ventures that help people.</p>
+        </section>
 
-  <section>
-    <h2>My Goals & Dreams</h2>
-    <ul>
-      <li>Get into Harvard University (CS + Business)</li>
-      <li>Create successful tech & business ventures</li>
-      <li>Become a leader who inspires and builds</li>
-      <li>Develop mentally, physically, and intellectually</li>
-    </ul>
-  </section>
+        <section class="card" aria-labelledby="goals-title">
+          <h2 id="goals-title">Goals & Dreams</h2>
+          <ul>
+            <li>Get into Harvard University (CS + Business)</li>
+            <li>Build tech & business projects that scale</li>
+            <li>Lead teams and inspire young people</li>
+            <li>Maintain peak physical & mental performance</li>
+          </ul>
+        </section>
 
-  <section>
-    <h2>My Projects & Work</h2>
-    <ul>
-      <li>Live GitHub website built and verified on Google</li>
-      <li>Programming experiments & coding projects</li>
-      <li>Fitness systems & discipline routines</li>
-    </ul>
-  </section>
+        <section class="card" aria-labelledby="work-title">
+          <h2 id="work-title">Projects & Progress</h2>
+          <p class="small">Current focus:</p>
+          <ul class="list-plain">
+            <li>Live GitHub Pages site (this page) — verified on Google</li>
+            <li>Scratch & basic programming experiments</li>
+            <li>Training & discipline systems (daily logs)</li>
+          </ul>
 
-  <section>
-    <h2>Contact Me</h2>
-    <p>For collaborations or questions, reach me at: <em>rida.daas77@gmail.com</em> <em> Or ern331921@gmail.com</em> </p>
-  </section>
+          <div style="margin-top:12px">
+            <a class="link" href="https://github.com/ridadaas77-pixel" target="_blank" rel="noopener">GitHub profile</a> •
+            <a class="link" href="#" id="more-link">More projects (coming)</a>
+          </div>
+        </section>
+
+        <section class="card" id="contact" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact</h2>
+          <p class="small">For collaborations or serious questions, email: <a href="mailto:email@example.com" class="link">email@example.com</a></p>
+          <p class="muted">Tip: replace the placeholder email above with your preferred contact. Keep personal details minimal.</p>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <div class="card">
+          <div class="avatar">MR</div>
+          <div style="margin-top:12px">
+            <div class="small"><strong>Profile</strong></div>
+            <div class="muted" style="margin-top:6px">Student • Builder • Future leader</div>
+            <div style="margin-top:10px" class="social">
+              <a href="https://github.com/ridadaas77-pixel" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="#" target="_blank" rel="noopener">Twitter</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card field">
+          <div class="small"><strong>Quick facts</strong></div>
+          <div style="margin-top:8px" class="small">
+            <div>Location: NRW, Germany</div>
+            <div>Age: 14</div>
+            <div>Language: English / Arabic (if you want to add)</div>
+          </div>
+        </div>
+
+        <div class="card field">
+          <div class="small"><strong>Why this site</strong></div>
+          <div class="muted" style="margin-top:8px">Public record of progress. Showcases projects, goals, and vision — built to be discovered by future collaborators and universities.</div>
+        </div>
+      </aside>
+    </div>
+  </main>
 
   <footer>
-    © 2025 Mohammad Rida Daas — All Rights Reserved
-  </footer>
+    <div class="small">© 2025 <strong>Mohammad Rida Daas</strong> — All rights reserved</div>
+    <div class="muted" style="margin-top:6px">This page is verified in Google Search Console — do not remove the verification file from the repo root.</div>
+  </footer> <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohammad Rida Daas | Ambitious Teen • Future Harvard Student</title>
+  <meta name="description" content="Mohammad Rida Daas — ambitious teen building projects in coding, fitness, and entrepreneurship. Live GitHub site, verified on Google." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ridadaas77-pixel.github.io/MohammadRidaDaas/" />
 
+  <!-- Open Graph (social preview) -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Mohammad Rida Daas | Ambitious Teen • Future Harvard Student" />
+  <meta property="og:description" content="Ambitious teen building projects in coding, fitness, and entrepreneurship. Verified GitHub Pages site." />
+  <meta property="og:url" content="https://ridadaas77-pixel.github.io/MohammadRidaDaas/" />
+  <meta property="og:site_name" content="Mohammad Rida Daas" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@your_twitter_here" />
+  <meta name="twitter:title" content="Mohammad Rida Daas | Ambitious Teen" />
+  <meta name="twitter:description" content="Ambitious teen building projects in coding, fitness, and entrepreneurship." />
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohammad Rida Daas",
+    "alternateName": "Mr CEO",
+    "url": "https://ridadaas77-pixel.github.io/MohammadRidaDaas/",
+    "description": "Ambitious teen building projects in coding, fitness, and entrepreneurship. Future Harvard student.",
+    "jobTitle": "Student",
+    "sameAs": [
+      "https://github.com/ridadaas77-pixel",
+      "https://www.linkedin.com/in/your-profile-if-any",
+      "https://twitter.com/your_twitter_here"
+    ]
+  }
+  </script>
+
+  <!-- Styling: dark professional theme (navy + electric blue) -->
+  <style>
+    :root{
+      --bg-1:#0f1624;
+      --bg-2:#121826;
+      --card:#101723;
+      --accent:#2e90ff;
+      --muted:#bfc8d6;
+      --glass: rgba(255,255,255,0.02);
+      --radius:14px;
+      --maxw:900px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, Roboto, system-ui, -apple-system, "Segoe UI", Arial;
+      background: linear-gradient(180deg,var(--bg-1),var(--bg-2));
+      color:var(--muted);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    header{
+      padding:48px 20px;
+      text-align:center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    }
+    .container{max-width:var(--maxw);margin:28px auto;padding:0 20px}
+    h1{margin:0;color:#fff;font-weight:700;font-size:2.2rem;letter-spacing:-0.5px}
+    .subtitle{color:var(--muted);margin-top:8px;font-weight:500}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      border-left:4px solid rgba(46,144,255,0.12);
+      margin-bottom:20px;
+    }
+    h2{color:var(--accent);margin-top:0;font-size:1.5rem}
+    p, li{color:var(--muted);font-size:1rem}
+    ul{padding-left:0;list-style:none;margin:0}
+    li::before{content:"\2713";color:var(--accent);display:inline-block;width:22px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+    .sidebar{position:sticky;top:20px}
+    .pill{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
+    .cta{
+      display:inline-block;
+      background:linear-gradient(90deg,var(--accent),#2aa0ff);
+      color:#012;
+      padding:10px 14px;border-radius:10px;margin-top:12px;font-weight:700;text-decoration:none;
+      box-shadow: 0 8px 30px rgba(46,144,255,0.08);
+    }
+    footer{text-align:center;padding:28px 20px;color:rgba(191,200,214,0.7);font-size:0.9rem}
+    .small{font-size:0.92rem;color:rgba(191,200,214,0.9)}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center;justify-content:center}
+    .link{color:var(--accent);text-decoration:none;font-weight:600}
+    .avatar{
+      width:100%;height:180px;border-radius:10px;background:linear-gradient(135deg,#071226,#0a1320);
+      display:flex;align-items:center;justify-content:center;color:#88baff;font-weight:700;font-size:2rem;
+      border:1px solid rgba(255,255,255,0.03)
+    }
+    .field{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .list-plain{padding-left:0;margin:0}
+    .muted{color:rgba(191,200,214,0.75)}
+    .social{display:flex;gap:10px;flex-wrap:wrap}
+    .social a{display:inline-block;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.02);color:var(--muted);text-decoration:none;border:1px solid rgba(255,255,255,0.02)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Mohammad Rida Daas</h1>
+      <div class="subtitle">Ambitious Teen • Future Harvard Student • Building projects in coding & fitness</div>
+      <div class="meta" style="margin-top:18px">
+        <span class="pill">14 years old</span>
+        <span class="pill">NRW, Germany</span>
+        <a class="cta" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <div class="grid">
+      <div>
+        <section class="card" aria-labelledby="about-title">
+          <h2 id="about-title">About Me</h2>
+          <p class="small">Hello — I’m <strong>Mohammad Rida Daas</strong>. I’m focused on building a future through disciplined training, learning programming, and creating projects that matter. I aim to attend Harvard (CS + Business) and start ventures that help people.</p>
+        </section>
+
+        <section class="card" aria-labelledby="goals-title">
+          <h2 id="goals-title">Goals & Dreams</h2>
+          <ul>
+            <li>Get into Harvard University (CS + Business)</li>
+            <li>Build tech & business projects that scale</li>
+            <li>Lead teams and inspire young people</li>
+            <li>Maintain peak physical & mental performance</li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="work-title">
+          <h2 id="work-title">Projects & Progress</h2>
+          <p class="small">Current focus:</p>
+          <ul class="list-plain">
+            <li>Live GitHub Pages site (this page) — verified on Google</li>
+            <li>Scratch & basic programming experiments</li>
+            <li>Training & discipline systems (daily logs)</li>
+          </ul>
+
+          <div style="margin-top:12px">
+            <a class="link" href="https://github.com/ridadaas77-pixel" target="_blank" rel="noopener">GitHub profile</a> •
+            <a class="link" href="#" id="more-link">More projects (coming)</a>
+          </div>
+        </section>
+
+        <section class="card" id="contact" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact</h2>
+          <p class="small">For collaborations or serious questions, email: <a href="mailto:email@example.com" class="link">email@example.com</a></p>
+          <p class="muted">Tip: replace the placeholder email above with your preferred contact. Keep personal details minimal.</p>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <div class="card">
+          <div class="avatar">MR</div>
+          <div style="margin-top:12px">
+            <div class="small"><strong>Profile</strong></div>
+            <div class="muted" style="margin-top:6px">Student • Builder • Future leader</div>
+            <div style="margin-top:10px" class="social">
+              <a href="https://github.com/ridadaas77-pixel" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="#" target="_blank" rel="noopener">Twitter</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card field">
+          <div class="small"><strong>Quick facts</strong></div>
+          <div style="margin-top:8px" class="small">
+            <div>Location: NRW, Germany</div>
+            <div>Age: 14</div>
+            <div>Language: English / Arabic (if you want to add)</div>
+          </div>
+        </div>
+
+        <div class="card field">
+          <div class="small"><strong>Why this site</strong></div>
+          <div class="muted" style="margin-top:8px">Public record of progress. Showcases projects, goals, and vision — built to be discovered by future collaborators and universities.</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="small">© 2025 <strong>Mohammad Rida Daas</strong> — All rights reserved</div>
+    <div class="muted" style="margin-top:6px">This page is verified in Google Search Console — do not remove the verification file from the repo root.</div>
+  </footer> <em>rida.daas77@gmail.com</em> <em> Or ern331921@gmail.com</em> </p>
 </body>
 </html>
-
