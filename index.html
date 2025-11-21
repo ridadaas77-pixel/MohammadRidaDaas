@@ -5,86 +5,98 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MRD — Mohammad Rida Daas | Ambitious Teen • Future Harvard Student</title>
   <meta name="description" content="Mohammad Rida Daas (MRD) — ambitious student building projects in academics, coding experiments, and entrepreneurship. Live GitHub site, verified on Google." />
-  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://ridadaas77-pixel.github.io/MohammadRidaDaas/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="MRD — Mohammad Rida Daas | Ambitious Teen" />
-  <meta property="og:description" content="Ambitious student working on projects in math, coding experiments, and entrepreneurship. Verified GitHub Pages site." />
-  <meta property="og:url" content="https://ridadaas77-pixel.github.io/MohammadRidaDaas/" />
-  <meta property="og:site_name" content="MRD" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="MRD — Mohammad Rida Daas" />
-  <meta name="twitter:description" content="Ambitious teen building projects in academics, coding experiments, and entrepreneurship." />
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mohammad Rida Daas",
-    "alternateName": "MRD",
-    "url": "https://ridadaas77-pixel.github.io/MohammadRidaDaas/",
-    "description": "Ambitious teen building projects in math, coding, and entrepreneurship. Future Harvard candidate.",
-    "jobTitle": "Student",
-    "sameAs": [
-      "https://github.com/ridadaas77-pixel",
-      "https://www.linkedin.com/in/MRD77"
-    ]
-  }
-  </script>
-  
-   </script>
 
   <style>
     :root {
-  --bg: #F7E7CE;
-  --bg2: #000000;
-  --card: #ffffff; 
-  --header: #D4AF37;
-  --text: #000000;
-  --text-bright: #000000;
-  --accent: #D4AF37;
-  --accent-strong: #F7E7CE;
+      --bg: #1a1a1a;
+      --card: #2b2b2b;
+      --accent: #ff6600;
+      --accent-light: #e65c00;
+      --text: #fff;
+      --muted: #ccc;
     }
- 
-    *{box-sizing:border-box}
+
+    *{box-sizing:border-box;}
     body{
-      margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-      background:linear-gradient(180deg,var(--bg),#f3efe9);
-      color:#222;
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background: var(--bg);
+      color: var(--text);
       -webkit-font-smoothing:antialiased;
       line-height:1.5;
     }
-    .wrap{max-width:var(--maxw);margin:28px auto;padding:20px}
+    .wrap{max-width:1200px;margin:28px auto;padding:20px;}
     header{
-      background:var(--card);border-radius:14px;padding:34px;
-      box-shadow:0 8px 30px rgba(30,30,30,0.06);display:flex;gap:20px;align-items:center;
+      background: var(--card);
+      border-radius:14px;
+      padding:34px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.3);
+      display:flex;
+      gap:20px;
+      align-items:center;
     }
     .brand{
-      width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,#f7efe6,#efe7db);
-      display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent-2);
-      font-size:28px;border:1px solid rgba(0,0,0,0.03)
+      width:96px;
+      height:96px;
+      border-radius:12px;
+      background:#333;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      color:var(--accent);
+      font-size:28px;
+      border:1px solid rgba(255,255,255,0.1)
     }
     .head-text h1{margin:0;font-size:1.6rem}
     .head-text .sub{margin-top:6px;color:var(--muted)}
     .meta-row{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
-    .pill{background:rgba(0,0,0,0.03);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--muted)}
+    .pill{background:rgba(255,255,255,0.05);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--muted)}
+    
     main{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
     @media(max-width:860px){main{grid-template-columns:1fr}}
-    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 8px 20px rgba(30,30,30,0.04)}
+
+    .card{
+      background: var(--card);
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+
     h2{color:var(--accent);margin-top:0;font-size:1.25rem}
     p,li{color:var(--muted);font-size:0.98rem}
     ul{padding-left:0;list-style:none;margin:0}
-    li::before{content:"\2713";color:var(--accent-2);display:inline-block;width:22px}
-    .aside .avatar{width:100%;height:140px;border-radius:10px;background:linear-gradient(135deg,#fff9f2,#eef6f4);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent-2);font-size:28px;border:1px solid rgba(0,0,0,0.03)}
+    li::before{content:"\2713";color:var(--accent);display:inline-block;width:22px}
+
+    .aside .avatar{
+      width:100%;
+      height:140px;
+      border-radius:10px;
+      background:#333;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      color:var(--accent);
+      font-size:28px;
+      border:1px solid rgba(255,255,255,0.1);
+    }
     .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-    .links a{display:inline-block;padding:8px 10px;border-radius:8px;background:#fbf7f3;border:1px solid rgba(0,0,0,0.03);color:var(--muted);text-decoration:none;font-weight:700}
+    .links a{
+      display:inline-block;
+      padding:8px 10px;
+      border-radius:8px;
+      background:#ff6600;
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.3s;
+    }
+    .links a:hover{background:#e65c00;}
+
     footer{margin-top:20px;text-align:center;color:var(--muted);font-size:0.9rem}
-    .quote{font-style:italic;color:#444;margin-top:10px}
+    .quote{font-style:italic;color:var(--muted);margin-top:10px}
     .small{font-size:0.94rem;color:var(--muted)}
   </style>
 </head>
@@ -93,7 +105,7 @@
     <header>
       <div class="brand">MRD</div>
       <div class="head-text">
-        <h1>MRD — <span style="font-weight:700">Mohammad Rida Daas</span></h1>
+        <h1>MRD — <strong>Mohammad Rida Daas</strong></h1>
         <div class="sub">Ambitious student • Future Harvard (CS & Business) • Problem solver</div>
         <div class="meta-row">
           <div class="pill">Age: 14</div>
@@ -119,7 +131,6 @@
             <li>Use success to support family and charitable projects</li>
             <li>Be an example of discipline, faith, and long-term thinking</li>
           </ul>
-
           <div style="margin-top:12px">
             <h2 style="margin-top:18px">Inspiring note</h2>
             <p class="small">A short motivational verse from the Qur’an that guides my outlook: <em>“Indeed, with hardship [will be] ease.”</em> (Qur’an 94:6)</p>
@@ -131,8 +142,9 @@
           <p class="small">Current focus and projects:</p>
           <ul>
             <li>Live GitHub Pages site (this portfolio) — verified on Google</li>
+            <li>Profit Calculator — <a href="https://ridadaas77-pixel.github.io/profitcalculator-" target="_blank" class="links">Live Site</a> | <a href="https://github.com/ridadaas77-pixel/profitcalculator-" target="_blank" class="links">Code</a></li>
             <li>Scratch & beginner programming experiments</li>
-            <li>Academic preparation (math competitions, school projects</li>
+            <li>Academic preparation (math competitions, school projects)</li>
           </ul>
           <p class="small" style="margin-top:10px">Notable experience: Erste Hilfe course at ASB Oberhausen/Duisburg. Preparing for Math Kangaroo (March 2026).</p>
         </section>
@@ -145,7 +157,7 @@
         <section class="card" id="contact" aria-labelledby="contact">
           <h2 id="contact">Contact</h2>
           <p class="small">For collaborations, serious questions, or academic opportunities, email: <a href="mailto:rida.daas77@gmail.com" class="links">rida.daas77@gmail.com</a></p>
-          <p class="small">This websites code: <a href="https://github.com/ridadaas77-pixel/MohammadRidaDaas/blob/main/index.html" target="_blank" rel="noopener" class="links">github.com/ridadaas77-pixel/MohammadRidaDaas/blob/main/index.html</a></p>
+          <p class="small">This website’s code: <a href="https://github.com/ridadaas77-pixel/MohammadRidaDaas" target="_blank" class="links">GitHub Repository</a></p>
         </section>
       </div>
 
@@ -156,8 +168,8 @@
             <div class="small"><strong>Profile</strong></div>
             <div class="small" style="margin-top:6px">Student • Problem solver • Aspiring founder</div>
             <div class="links" style="margin-top:10px">
-              <a href="https://github.com/ridadaas77-pixel" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://www.linkedin.com/in/MRD77" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/ridadaas77-pixel" target="_blank">GitHub</a>
+              <a href="https://www.linkedin.com/in/MRD77" target="_blank">LinkedIn</a>
               <a href="mailto:rida.daas77@gmail.com">Email</a>
             </div>
           </div>
@@ -181,8 +193,8 @@
 
     <footer>
       <div class="small">© 2025 MRD — Mohammad Rida Daas. All rights reserved.</div>
-      <div class="small" style="margin-top:6px">My Personal Portfolio — Always Improving</div>
-      <div class="small" style="margin-top:6px">This site is verified on Google Search  engine</div>
+      <div class="small" style="margin-top:6px">Personal Portfolio — Always Improving</div>
+      <div class="small" style="margin-top:6px">Verified on Google Search engine</div>
     </footer>
   </div>
 </body>
